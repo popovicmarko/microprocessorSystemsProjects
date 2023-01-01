@@ -4,7 +4,7 @@ matrica: .word 1, 2, 3, 4, 5, 6, 7, 8, 9
 .section .text
 .globl main
 main:
-la x1, matrica # učitavanje adrese matrice u x1
+la x1, matrica # učitavanje adrese matrice u x1.
 addi x2, x0, 0 # postavljanje x2 na nulu
 addi x3, x0, 0 # postavljanje x3 na nulu
 addi x4, x0, 0 # postavljanje x4 na nulu
