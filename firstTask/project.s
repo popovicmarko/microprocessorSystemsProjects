@@ -58,11 +58,6 @@ loop_max:
 swap_max:
   addi x31, x11, 0 # update max
   jal x0, loop_max # loop
-finish:
-  lw x28, 0(x30) # load numbers
-  lw x29, 0(x31)
-  sw x28, 0(x31) # swap numbers
-  sw x29, 0(x30)
 
 increment:
   mul x9, x7, x8 # multiplies i and j in order to check in the main loop if the current element is the last one
@@ -73,5 +68,10 @@ increase:
   addi x8, x8, 1 # increases j by 1, but there is no need to check if the new number has exceeded the column size because x9 has reached the value needed to stop the main loop
   addi x7, x0, 1 # returns value of i to 1
   jalr x1, x1, 0 # return where you left off in the main loop
+finish:
+  lw x28, 0(x30) # load numbers
+  lw x29, 0(x31)
+  sw x28, 0(x31) # swap numbers
+  sw x29, 0(x30)
 
 nop
