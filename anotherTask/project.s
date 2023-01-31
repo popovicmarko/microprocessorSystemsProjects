@@ -14,9 +14,4 @@ sort_loop:
     mov arr[si], ax
 
 skip_swap:
-    add si, 2
-    loop sort_loop
-
-    ret
-main endp
-end
+    add 
