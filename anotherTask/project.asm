@@ -44,4 +44,4 @@
      EXIT:                    ; oznaka za kraj petlje
      LEA SI, array            ; ucitavanje adrese niza u registar SI
 
-     END                      ; kraj programa
+     END                     
